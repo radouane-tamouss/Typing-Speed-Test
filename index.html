@@ -4,85 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Source+Code+Pro:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-
-    <title>Typing Speed Test Home</title>
-    <style>
-        *
-        {
-            padding : 0;
-            margin : 0;
-            box-sizing: border-box;
-            
-        }
-
-        body{
-            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";        }
-        .banner-area
-        {
-            width : 100%;
-            height : 100vh;
-            background:linear-gradient(rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5)), url(bg.jpg);
-            background-size: cover;
-        }
-        .content-area
-        {
-            height : 100%;
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            
-        }
-        .content
-        {
-            text-align: center;
-        
-        }
-
-        .content h1{
-            font-size: 80px;
-            color : #ffd369;
-        }
-
-        .content p{
-            font-size: 30px;
-            color : rgb(119, 119, 119);
-        }
-
-        .content .btn
-        {
-            border : none ;
-            outline : none;
-            padding: 15px;
-            margin-top: 100px;
-            border-radius: 4px;
-            color : rgb(26, 29, 31);
-            font-size: 18px;
-            cursor: pointer;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
 </head>
-<body>
-    <div class="banner-area">
-        <div class="content-area">
-            <div class="content">
-                <h1>RO Typing Speed Test</h1>
-                <p>Tapez un court texte pour savoir à quelle vitesse vous pouvez taper<br> testez votre vitesse de frappe en mpm en français ou anglais! </p>
-                <button id="btn" class="btn">Get Started</button>
-
-                <script type="text/javascript">
-                document.getElementById("btn").onclick = function () {
-                    location.href = "test.html";
-                };
-                </script>
-            </div>
-        </div>
+  <section class="showcase">
+    <header>
+        <div>
+      <img src="logo.png" alt="Rim & Redouan" class="logo"></img>
     </div>
 
-  
- </body>
-</html>
+    </header>
+    <video src="video.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Typing Speed Test </h2> 
+      <h4>Test de vitesse de frappe</h4>
+      <p>Tapez un court texte pour savoir à quelle vitesse vous pouvez taper<br> testez votre vitesse de frappe en mpm en français ou anglais!</p>
+      <a href="test.html">START</a>
+    </div>
+    
+  </section>
