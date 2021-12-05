@@ -1,1 +1,1 @@
-# Typing-Speed-Test
+http://typing.rf.gd/
