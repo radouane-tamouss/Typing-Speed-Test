@@ -94,6 +94,11 @@ a:focus,a:hover{
   text-decoration: none;
 }
 
+.logo-blue
+{
+  margin-right: 7px;
+  margin-bottom: 4px;
+  width: 38px;}
 footer{
   padding: 20px;
   font-size: 15px;
