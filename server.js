@@ -1,31 +1,17 @@
 const express = require('express');
-const mongoose = require('mongoose');
-const passport = require('passport');
-const session = require('express-session');
-const authRoutes = require('./routes/auth');
+const cors = require('cors');
+const usersRouter = require('./routes/users');
 
 const app = express();
+const PORT = process.env.PORT || 3000;
 
-// Middleware
+app.use(cors());
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(session({
-  secret: process.env.SESSION_SECRET || 'your-secret-key',
-  resave: false,
-  saveUninitialized: false
-}));
-
-// Initialize Passport
-app.use(passport.initialize());
-app.use(passport.session());
-
-// Routes
-app.use('/auth', authRoutes);
-
-// Serve static files
 app.use(express.static('public'));
 
-const PORT = process.env.PORT || 3000;
+// Routes
+app.use('/api/users', usersRouter);
+
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
