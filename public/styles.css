@@ -1,0 +1,33 @@
+/* Add these styles to your existing styles.css */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.stat-box h6 {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.stat-box p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #29bb89;
+    margin: 0;
+}
+
+.table th {
+    border-top: none;
+}
+
+#userAvatar {
+    border: 3px solid #29bb89;
+}

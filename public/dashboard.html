@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test - Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center mb-3">
+                            <img id="userAvatar" src="" alt="User Avatar" class="rounded-circle" style="width: 100px; height: 100px;">
+                        </div>
+                        <h5 id="username" class="card-title text-center"></h5>
+                        <p id="email" class="text-center text-muted"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Statistics</h5>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="stat-box">
+                                    <h6>High Score</h6>
+                                    <p id="highScore">0 WPM</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="stat-box">
+                                    <h6>Average Speed</h6>
+                                    <p id="averageWPM">0 WPM</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="stat-box">
+                                    <h6>Tests Completed</h6>
+                                    <p id="testsCompleted">0</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Recent Tests</h5>
+                        <div id="recentTests" class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>WPM</th>
+                                        <th>Accuracy</th>
+                                        <th>Language</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="recentTestsBody">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
